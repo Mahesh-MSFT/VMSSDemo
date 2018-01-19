@@ -1,0 +1,30 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="row">
+    <div id="divServer" class="col-md-12">
+        <h2 id="hdrServer"></h2>
+        <h2 id="hdrTime"></h2>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        var refreshComponent = function () {
+
+            $.get("?handler=ServerData", function (response) {
+                hdrServer.innerHTML = "Application is running on " + response[0]
+                divServer.replaceChild(hdrServer, hdrServer);
+
+                hdrTime.innerHTML = "Current Time is " + response[1]
+                divServer.replaceChild(hdrTime, hdrTime);
+            });
+        };
+
+        $(function () { window.setInterval(refreshComponent, 1000); });
+
+    });
+
+</script>
