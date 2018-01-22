@@ -104,7 +104,7 @@ Write-Output "Deploying the Web App package..."
 
 $msdeployArguments = '-verb:sync',
 
-       '-source:package="C:\DeployTemp\drop\simple2tierweb.zip"',
+       '-source:package="C:\DeployTemp\drop\VanilaWebApp.zip"',
 
        '-dest:auto,ComputerName="localhost"',
 
