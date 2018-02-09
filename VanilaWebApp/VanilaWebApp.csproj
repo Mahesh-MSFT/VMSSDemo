@@ -3,6 +3,32 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\netcoreapp2.0\VanilaWebApp.deps.json" />
+    <Content Include="bin\Debug\netcoreapp2.0\VanilaWebApp.runtimeconfig.dev.json" />
+    <Content Include="bin\Debug\netcoreapp2.0\VanilaWebApp.runtimeconfig.json" />
+    <Content Include="bin\Release\netcoreapp2.0\VanilaWebApp.deps.json" />
+    <Content Include="bin\Release\netcoreapp2.0\VanilaWebApp.runtimeconfig.dev.json" />
+    <Content Include="bin\Release\netcoreapp2.0\VanilaWebApp.runtimeconfig.json" />
+    <Content Include="bin\Release\PublishOutput\appsettings.Development.json" />
+    <Content Include="bin\Release\PublishOutput\appsettings.json" />
+    <Content Include="bin\Release\PublishOutput\bundleconfig.json" />
+    <Content Include="bin\Release\PublishOutput\VanilaWebApp.deps.json" />
+    <Content Include="bin\Release\PublishOutput\VanilaWebApp.runtimeconfig.json" />
+    <Content Include="bin\Release\PublishOutput\wwwroot\css\site.css" />
+    <Content Include="bin\Release\PublishOutput\wwwroot\css\site.min.css" />
+    <Content Include="bin\Release\PublishOutput\wwwroot\favicon.ico" />
+    <Content Include="bin\Release\PublishOutput\wwwroot\lib\bootstrap\.bower.json" />
+    <Content Include="bin\Release\PublishOutput\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="bin\Release\PublishOutput\wwwroot\lib\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="bin\Release\PublishOutput\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bin\Release\PublishOutput\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bin\Release\PublishOutput\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bin\Release\PublishOutput\wwwroot\lib\jquery-validation-unobtrusive\.bower.json" />
+    <Content Include="bin\Release\PublishOutput\wwwroot\lib\jquery-validation\.bower.json" />
+    <Content Include="bin\Release\PublishOutput\wwwroot\lib\jquery\.bower.json" />
+    <Content Include="bin\Release\PublishOutput\wwwroot\lib\jquery\LICENSE.txt" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
   </ItemGroup>
   <ItemGroup>
@@ -10,5 +36,38 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Deploy\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\netcoreapp2.0\VanilaWebApp.dll" />
+    <None Include="bin\Debug\netcoreapp2.0\VanilaWebApp.pdb" />
+    <None Include="bin\Release\netcoreapp2.0\VanilaWebApp.dll" />
+    <None Include="bin\Release\netcoreapp2.0\VanilaWebApp.pdb" />
+    <None Include="bin\Release\PublishOutput\VanilaWebApp.dll" />
+    <None Include="bin\Release\PublishOutput\VanilaWebApp.pdb" />
+    <None Include="bin\Release\PublishOutput\VanilaWebApp.PrecompiledViews.dll" />
+    <None Include="bin\Release\PublishOutput\VanilaWebApp.PrecompiledViews.pdb" />
+    <None Include="bin\Release\PublishOutput\web.config" />
+    <None Include="bin\Release\PublishOutput\wwwroot\images\banner1.svg" />
+    <None Include="bin\Release\PublishOutput\wwwroot\images\banner2.svg" />
+    <None Include="bin\Release\PublishOutput\wwwroot\images\banner3.svg" />
+    <None Include="bin\Release\PublishOutput\wwwroot\images\banner4.svg" />
+    <None Include="bin\Release\PublishOutput\wwwroot\js\site.js" />
+    <None Include="bin\Release\PublishOutput\wwwroot\js\site.min.js" />
+    <None Include="bin\Release\PublishOutput\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <None Include="bin\Release\PublishOutput\wwwroot\lib\bootstrap\dist\css\bootstrap-theme.min.css.map" />
+    <None Include="bin\Release\PublishOutput\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="bin\Release\PublishOutput\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="bin\Release\PublishOutput\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="bin\Release\PublishOutput\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="bin\Release\PublishOutput\wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Include="bin\Release\PublishOutput\wwwroot\lib\bootstrap\dist\js\npm.js" />
+    <None Include="bin\Release\PublishOutput\wwwroot\lib\bootstrap\LICENSE" />
+    <None Include="bin\Release\PublishOutput\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <None Include="bin\Release\PublishOutput\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <None Include="bin\Release\PublishOutput\wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <None Include="bin\Release\PublishOutput\wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <None Include="bin\Release\PublishOutput\wwwroot\lib\jquery-validation\LICENSE.md" />
+    <None Include="bin\Release\PublishOutput\wwwroot\lib\jquery\dist\jquery.js" />
+    <None Include="bin\Release\PublishOutput\wwwroot\lib\jquery\dist\jquery.min.map" />
   </ItemGroup>
 </Project>
