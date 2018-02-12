@@ -110,7 +110,7 @@ $msdeployArguments = '-verb:sync',
 
        '-allowUntrusted',
 
-	   '-setParam:kind=ProviderPath,scope=contentPath,value="VanilaWebApp"'
+	   '-setParam:kind=ProviderPath,scope=contentPath,value="Default Web Site/VanilaWebApp"'
 
 
 
