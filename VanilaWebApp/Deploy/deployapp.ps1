@@ -108,7 +108,9 @@ $msdeployArguments = '-verb:sync',
 
        '-dest:auto,ComputerName="localhost"',
 
-       '-allowUntrusted'
+       '-allowUntrusted',
+
+	   '-setParam:kind=ProviderPath,scope=contentPath,value=$(target.website)'
 
 
 
