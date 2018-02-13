@@ -67,6 +67,19 @@ $Command = "IISRESET"
 Invoke-Expression -Command $Command
 
 Write-Output "IIS Reset completed ..."
+
+# Install the .NET Core SDK
+Invoke-WebRequest https://go.microsoft.com/fwlink/?linkid=848827 -outfile $env:temp\dotnet-dev-win-x64.1.0.4.exe
+Start-Process $env:temp\dotnet-dev-win-x64.1.0.4.exe -ArgumentList '/quiet' -Wait
+
+# Install the .NET Core Windows Server Hosting bundle
+Invoke-WebRequest https://go.microsoft.com/fwlink/?LinkId=817246 -outfile $env:temp\DotNetCore.WindowsHosting.exe
+Start-Process $env:temp\DotNetCore.WindowsHosting.exe -ArgumentList '/quiet' -Wait
+
+# Restart the web server so that system PATH updates take effect
+net stop was /y
+net start w3svc
+
 $source = "https://download.microsoft.com/download/0/1/D/01DC28EA-638C-4A22-A57B-4CEF97755C6C/WebDeploy_amd64_en-US.msi"
 $dest = "C:\WindowsAzure\WebDeploy_amd64_en-US.msi"
 Try
