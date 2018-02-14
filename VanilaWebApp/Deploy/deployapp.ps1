@@ -136,6 +136,20 @@ Catch
     Write-Output "Error deploying the web package" | Write-Output
 }
 
+Write-Output "Setting up application pool ..."
+
 Set-ItemProperty -Path "IIS:\Sites\VanilaWebApp" -name "applicationPool" -value "DefaultAppPool"
+Set-ItemProperty -Path "IIS:\Sites\Default Web Site\VanilaWebApp" -name "applicationPool" -value "DefaultAppPool"
+
+Write-Output "Application pool set..."
+
+Write-Output "Converting to Web App..."
+ConvertTo-WebApplication "IIS:\Sites\Default Web Site\VanilaWebApp"
+Write-Output "Converted to Web App..."
+
+Write-Output "Starting web site ..."
+Start-WebSite -Name "Default Web Site"
+Write-Output "Started web site ..."
+
 
 Write-Output "The Web package has been deployed"
