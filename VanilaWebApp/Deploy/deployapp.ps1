@@ -136,5 +136,6 @@ Catch
     Write-Output "Error deploying the web package" | Write-Output
 }
 
+Set-ItemProperty -Path "IIS:\Sites\VanilaWebApp" -name "applicationPool" -value "DefaultAppPool"
 
 Write-Output "The Web package has been deployed"
