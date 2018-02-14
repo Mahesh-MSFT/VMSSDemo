@@ -68,9 +68,9 @@ Invoke-Expression -Command $Command
 
 Write-Output "IIS Reset completed ..."
 
-# Install the .NET Core SDK
-#Invoke-WebRequest https://go.microsoft.com/fwlink/?linkid=848827 -outfile $env:temp\dotnet-dev-win-x64.1.0.4.exe
-#Start-Process $env:temp\dotnet-dev-win-x64.1.0.4.exe -ArgumentList '/quiet' -Wait
+# Install the .NET Core 2.0 SDK
+Invoke-WebRequest https://download.microsoft.com/download/1/1/5/115B762D-2B41-4AF3-9A63-92D9680B9409/dotnet-sdk-2.1.4-win-gs-x64.exe -outfile $env:temp\dotnet-sdk-2.1.4-win-gs-x64.exe
+Start-Process $env:temp\dotnet-sdk-2.1.4-win-gs-x64.exe -ArgumentList '/quiet' -Wait
 
 # Install the .NET Core 2.0 Windows Server Hosting bundle
 #Invoke-WebRequest https://go.microsoft.com/fwlink/?LinkId=817246 -outfile $env:temp\DotNetCore.WindowsHosting.exe
