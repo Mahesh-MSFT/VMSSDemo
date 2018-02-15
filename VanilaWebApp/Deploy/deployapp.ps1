@@ -138,7 +138,7 @@ Catch
 
 Write-Output "Setting up application pool ..."
 
-Set-ItemProperty -Path "IIS:\Sites\VanilaWebApp" -name "applicationPool" -value "DefaultAppPool"
+#Set-ItemProperty -Path "IIS:\Sites\VanilaWebApp" -name "applicationPool" -value "DefaultAppPool"
 Set-ItemProperty -Path "IIS:\Sites\Default Web Site\VanilaWebApp" -name "applicationPool" -value "DefaultAppPool"
 
 Write-Output "Application pool set..."
